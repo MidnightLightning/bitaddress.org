@@ -4052,7 +4052,6 @@
 			</div>
 
 			<div id="papercommands">
-				<span>Addresses per page: <input type="text" id="paperlimitperpage" value="7" /></span>
 				<span>Addresses to generate: <input type="text" id="paperlimit" value="7" /></span>
 				<span><input type="button" id="papergenerate" value="Generate" onclick="ninja.wallets.paperwallet.build(document.getElementById('paperlimit').value * 1);" /> </span>
 				<span class="print"><input type="button" name="print" value="Print" onclick="window.print();" /></span>
@@ -4528,8 +4527,6 @@
 							var paperArea = document.getElementById("paperarea");
 							ninja.wallets.paperwallet.count++;
 							var i = ninja.wallets.paperwallet.count;
-							var pageBreakAt = document.getElementById("paperlimitperpage").value * 1;
-							pageBreatAt = (pageBreakAt > 0) ? pageBreakAt : 7;
 
 							var div = document.createElement("div");
 							div.setAttribute("id", "keyarea" + i);
